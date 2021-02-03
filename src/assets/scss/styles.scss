@@ -1,0 +1,18 @@
+/* utils */
+@import "utils/variables.scss";
+@import "utils/mixins.scss";
+@import "utils/fonts.scss";
+@import "utils/normalize.scss";
+@import "utils/visually-hidden.scss";
+/* common */
+@import "global.scss";
+@import "service.scss";
+@import "button.scss";
+
+/* Blocks */
+@import "main.scss";
+@import "flight.scss";
+@import "navigation.scss";
+@import "board.scss";
+@import "form.scss";
+@import "leg.scss";

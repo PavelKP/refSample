@@ -1,0 +1,49 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-family: $open-sans-regular;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $grey;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove cross-button in IE forms */
+input::-ms-clear {
+  display: none;
+}
+
+/* stylelint-disable */
+/* remove increment arrows */
+/* -- chrome */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* --firefox */
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: textfield;
+}
+
+/* stylelint-enable */

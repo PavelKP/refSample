@@ -1,0 +1,9 @@
+/dist
+/public
+
+.DS_Store
+.vscode
+*.log
+node_modules/
+npm-debug.*
+Thumbs.db

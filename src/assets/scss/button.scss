@@ -1,0 +1,46 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 5px 10px;
+
+  text-align: center;
+
+  background-color: transparent;
+  border: 0;
+
+  &--choose {
+    @include size(640px, 40px);
+
+    font-family: $open-sans-bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: -0.4px;
+    color: $white;
+
+    background-color: $orange;
+
+    &:active {
+      padding-left: 12px;
+      padding-top: 7px;
+    }
+  }
+
+  &--more {
+    @include size(255px, 31px);
+    margin: 0 auto;
+    padding: 4px 10px 4px 13px;
+    font-size: 19px;
+    color: $black-light;
+
+    background-color: $pepper;
+    border: 1px solid $grey-graphite;
+    box-shadow: inset 1px 1px $grey-steel, inset -1px -1px $grey-steel;
+
+    &:active {
+      background-color: $grey-metal;
+    }
+  }
+}

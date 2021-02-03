@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "open-sans-regular";
+  src: url("/assets/fonts/open-sans-regular.woff2") format("woff2"),
+    url("/assets/fonts/open-sans-regular.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "open-sans-bold";
+  src: url("/assets/fonts/open-sans-bold.woff2") format("woff2"),
+    url("/assets/fonts/open-sans-bold.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}

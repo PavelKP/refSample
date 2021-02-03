@@ -1,0 +1,55 @@
+{
+  "extends": [
+    "stylelint-config-htmlacademy"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+		"order/order": [
+			"custom-properties",
+			"declarations"
+		],
+		"order/properties-order": [
+      "position",
+      "top",
+      "right",
+      "bottom",
+      "left",
+      "z-index",
+      "display",
+      "float",
+			"width",
+      "height",
+      "min-height",
+      "margin",
+      "margin-top",
+      "margin-right",
+      "margin-bottom",
+      "margin-left",
+      "padding",
+      "font",
+      "font-family",
+      "font-style",
+      "font-size",
+      "line-height",
+      "text-align",
+      "color",
+      "background-size",
+      "background-color",
+      "border",
+      "border-radius",
+      "opacity",
+      "transition",
+      "transition-duration",
+      "will-change"
+    ],
+    "order/properties-alphabetical-order": null,
+    "declaration-no-important": true,
+    "indentation": [
+      2, {
+        "ignore": ["inside-parens"]
+      }
+    ]
+  }
+}

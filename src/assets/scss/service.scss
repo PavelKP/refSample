@@ -1,0 +1,33 @@
+.fieldset-reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.button-reset {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+/*.container {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}*/
+
+.container-wide {
+  width: 100%;
+  margin: 0 auto;
+}
+/*
+@media (min-width: $tablet-width) {
+  .container {
+    width: calc(100% - 60px);
+  }
+}*/

@@ -1,0 +1,12 @@
+@mixin bg-image ($url, $x:center, $y:center) {
+  background: {
+    image: url("/assets/img/#{$url}");
+    repeat: no-repeat;
+    position: $x $y;
+  }
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}

@@ -1,0 +1,196 @@
+.form {
+  position: fixed;
+  width: 255px;
+  max-height: 800px;
+  min-height: 458px;
+
+  padding: 34px 11px 36px 21px;
+
+  background-color: $white;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.form__heading {
+  margin-bottom: 17px;
+
+  font-family: $open-sans-bold;
+  font-size: 13px;
+}
+
+.form__set {
+  margin-bottom: 40px;
+
+  &--filter {
+    margin-bottom: 18px;
+  }
+
+  &--input {
+    margin-bottom: 18px;
+  }
+}
+
+.form__set:last-of-type {
+  margin-bottom: 0;
+}
+
+.form__label {
+  position: relative;
+  display: flex;
+
+  margin-bottom: 1px;
+
+  letter-spacing: 0.6px;
+
+  &:hover .form__input-hidden:not(:disabled) + .form__input {
+    border-color: $blue-deep;
+  }
+
+  &--text {
+    margin-bottom: 17px;
+  }
+}
+
+.form__description {
+  display: block;
+  margin-right: 4px;
+
+  &--price {
+    margin-top: 2px;
+    margin-left: 1px;
+  }
+
+  &--company {
+    display: flex;
+  }
+}
+
+.form__input {
+  position: relative;
+
+  @include size(174px, 20px);
+  display: block;
+
+  border: 1px solid $grey-dark;
+
+  &::placeholder {
+    color: blue;
+  }
+
+  &:focus {
+    color: $black;
+    border-color: grey;
+  }
+
+  &--box {
+    @include size(13px);
+    margin-right: 6px;
+    border-radius: 25%;
+  }
+
+  &--radio {
+    @include size(13px);
+    margin-right: 6px;
+    padding: 0;
+
+    border-radius: 100%;
+  }
+
+  &--text {
+    padding: 1px 2px;
+    font-family: $open-sans-regular;
+    font-size: 13px;
+    letter-spacing: 0.6px;
+
+    &::placeholder {
+      color: $black;
+    }
+  }
+}
+
+.form__input-hidden {
+  &:disabled + .form__input {
+    color: $grey-light;
+    border-color: $grey-light;
+  }
+
+  &:disabled:checked + .form__input {
+    border-color: $grey-light;
+
+    &::before {
+      background-color: $grey-light;
+    }
+  }
+
+  &:disabled:checked + .form__input--box {
+    border-color: $grey-light;
+
+    &::before {
+      background-color: transparent;
+      border-color: $grey-light;
+    }
+  }
+
+  &:disabled ~ .form__description {
+    color: $grey-light;
+  }
+
+  &:checked + .form__input--radio {
+    border-color: $blue-deep;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 2px;
+
+      display: block;
+
+      @include size(7px);
+
+      background-color: $blue-deep;
+      border-radius: 100%;
+    }
+  }
+
+  &:checked + .form__input--box {
+    border-color: $blue-deep;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 2px;
+
+      display: block;
+
+      @include size(7px, 4px);
+
+      border: 1px solid $blue-deep;
+      border-top: 0;
+      border-right: 0;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.form__description-input-wrapper {
+  display: flex;
+
+  &:first-of-type {
+    margin-bottom: 17px;
+  }
+}
+
+.form__company {
+  display: block;
+  width: 120px;
+  height: 16px;
+
+  overflow: hidden;
+}
+
+.form__price {
+  margin-left: 4px;
+}
